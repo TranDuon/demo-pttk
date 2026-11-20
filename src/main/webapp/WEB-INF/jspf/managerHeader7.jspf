@@ -1,0 +1,19 @@
+<%@ page pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineMan - <%= Web7.html(pageTitle) %></title>
+<link rel="stylesheet" href="../../css/cineman7.css">
+</head>
+<body>
+<header class="header"><div class="header-inner">
+  <a class="brand" href="managerHomeView7.jsp"><span class="brand-logo">&#127916;</span><span>Cine<span class="accent">Man</span></span></a>
+  <span class="header-note">Quản lí · <%= Web7.html(manager.getFullName()) %></span>
+</div></header>
+<nav class="menu" aria-label="Quản lí"><div class="menu-inner">
+  <a href="managerHomeView7.jsp">Trang quản lí</a>
+  <a href="selectStatTypeView7.jsp">Báo cáo</a>
+  <form method="post" action="../member/logout7.jsp"><button type="submit">Đăng xuất</button></form>
+</div></nav>
